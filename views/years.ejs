@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <% include layout/header-links %>
+  </head>
+  <body>
+    <% include layout/top-menu %>
+    <div class="categories">
+        <% for (let i = 0; i < years.length; i++) { %>
+            <p>
+                <a href="/years/<%= years[i] %>/page/1"><%= years[i] %></a>
+            </p>
+        <% } %> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<div class="container">
+    <% for (let i = 0; i < movies.length; i++) { %>
+      <div class="movieElement">
+        <a href="/movies/<%=movies[i].id %>">
+          <img src="<%= movies[i].poster %>" alt="<%= movies[i].title %> poster image" class="thumbnail">
+        </a>
+        <h1><a href="/movies/<%=movies[i].id %>"><%= movies[i].title %></a></h1>
+      </div>
+    <% } %>
+  </div>

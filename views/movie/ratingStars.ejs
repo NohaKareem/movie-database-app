@@ -1,0 +1,8 @@
+<% for(let i = 0; i < Math.floor(ratingOutOfFive); i++) { %>           
+    <i class="fa fa-star" aria-hidden="true"></i>         
+<% } %>        
+
+<!-- show partial stars -->
+<% if(remainder > 0) { %>
+    <i class="fa fa-star-half" aria-hidden="true"></i>  
+<% } %>

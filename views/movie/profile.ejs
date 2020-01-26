@@ -1,0 +1,23 @@
+<div class="detailsContainer">
+    <img src="<%= movie[0].poster %>" alt="<%= movie[0].title %> poster image" class="poster">
+    <div>
+      <h1>
+        <%= movie[0].title %>
+        [<a href="/years/<%=movie[0].year %>/page/1"><%= movie[0].year %></a>]
+      </h1>
+      
+      <p>
+        Runtime: <%= movie[0].runtime %> minutes
+        <br/>
+        Released: <%= movie[0].released.toDateString() %>
+        <br/>
+        <% include genres %>
+      </p>
+      
+      <% include languages %>
+      <% include ratings %>
+      <% include cast %>
+      <% include awards %>
+
+      <p><%= movie[0].fullplot %></p>
+    </div>

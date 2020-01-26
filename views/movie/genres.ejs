@@ -1,0 +1,7 @@
+    Genres: 
+    <% for(let i = 0; i < movie[0].genres.length; i++) { %>
+        <a href="/genres/<%=movie[0].genres[i] %>/page/1"><%= movie[0].genres[i] %></a>
+        <% if(i < movie[0].genres.length - 1) { %>
+        ,
+        <% } %>
+    <% } %>

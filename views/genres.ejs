@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <% include layout/header-links %>
+  </head>
+  <body>
+    <% include layout/top-menu %>
+    <div class="categories">
+        <% for (let i = 0; i < genres.length; i++) { %>
+            <p>
+                <a href="/genres/<%= genres[i] %>/page/1"><%= genres[i] %></a>
+            </p>
+        <% } %> 
+    </div>
+  </body>
+</html>

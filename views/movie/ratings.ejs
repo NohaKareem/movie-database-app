@@ -1,0 +1,14 @@
+<!-- rescale rating to be a max of 5 stars -->
+<div class="rating">
+    imdb
+    <% let ratingOutOfFive = movie[0].imdb.rating / 2 %>
+    <% let remainder = ratingOutOfFive % 1 %>
+    <% include ratingStars %>
+  </div>
+
+  <div class="rating tomatoes">
+    tomatoes
+    <% ratingOutOfFive = movie[0].tomatoes.viewer.rating / 2 %>
+    <% remainder = ratingOutOfFive % 1 %>
+    <% include ratingStars %>
+  </div>
